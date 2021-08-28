@@ -1,0 +1,16 @@
+.H1 {
+  color: aqua;
+}
+
+.ReverseRow {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Link {
+  color: black
+}
+
+.Link:hover {
+  color: #000080
+}
