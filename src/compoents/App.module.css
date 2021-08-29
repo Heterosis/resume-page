@@ -1,16 +1,41 @@
-.H1 {
-  color: aqua;
-}
-
-.ReverseRow {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
 .Link {
-  color: black
+  color: black;
 }
 
 .Link:hover {
-  color: #000080
+  color: #000080;
+}
+
+.Vh100 {
+  height: 500px;
+}
+
+.HeaderColor {
+  background-color: hsl(160, 75%, 60%);
+}
+
+.HeaderAnimation {
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05)
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+}
+
+.TransparentBg {
+  background-color: transparent;
 }

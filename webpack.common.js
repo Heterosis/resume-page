@@ -4,25 +4,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   target: 'web',
   entry: ['@babel/polyfill', path.resolve('src', 'index.jsx')],
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'eslint-loader',
-            options: {
-              fix: true,
-            },
-          },
-        ],
-      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -81,6 +69,11 @@ module.exports = {
       patterns: [
         { from: 'public', to: 'public' },
       ],
+    }),
+    new ESLintPlugin({
+      extensions: ['js', 'jsx'],
+      fix: true,
+      emitWarning: false,
     }),
   ],
   output: {
