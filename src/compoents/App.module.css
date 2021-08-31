@@ -7,14 +7,16 @@
 }
 
 .Vh100 {
-  height: 500px;
+  min-height: 100vh;
 }
 
 .HeaderColor {
-  background-color: hsl(160, 75%, 60%);
+  background-color: rgb(76, 230, 179);
+  transition: background-color 0.25s;
 }
 
 .HeaderAnimation {
+  user-select: none;
   animation-iteration-count: infinite;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -38,4 +40,9 @@
 
 .TransparentBg {
   background-color: transparent;
+}
+
+.NavbarColor {
+  background-color: rgb(166, 242, 217);
+  transition: background-color 0.25s;
 }

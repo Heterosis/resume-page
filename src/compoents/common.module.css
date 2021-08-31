@@ -1,0 +1,8 @@
+.TitleText {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(to right, rgb(76, 230, 179), rgb(0, 0, 0));
+  background-clip: text;
+  letter-spacing: 3px;
+}
