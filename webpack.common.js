@@ -55,6 +55,7 @@ module.exports = {
     alias: {
       compoents: path.resolve('src', 'compoents'),
       css: path.resolve('src', 'css'),
+      images: path.resolve('src', 'assets', 'images'),
     },
     extensions: ['.js', '.jsx', '.json', '.html'],
   },
