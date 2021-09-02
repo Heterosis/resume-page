@@ -9,15 +9,22 @@
   outline: thick double rgb(22, 156, 112);
 }
 
-.SkillPill {
-  border-radius: 50rem;
-  background-color: rgb(22, 156, 112);
-  padding: .35em .65em;
-  font-size: 0.9em;
-  font-weight: 700;
-  color: #fff;
+.SkillCol {
+  background-image: linear-gradient(135deg, rgba(22, 156, 112, 0.1), rgba(22, 156, 112, 0.3));
+  color: rgb(64, 64, 64);
+  font-size: 18px;
+  padding: 5% 10%;
   text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  margin-right: 0.6em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0rem 1rem 1.5rem;
+  transition: all 0.3s;
+}
+
+.SkillCol:hover {
+  transform: scale(1.05);
+  border: 1px solid rgba(22, 156, 112, 0.5);
+}
+
+.SkillIcon {
+  color: rgb(19, 134, 96);
 }

@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import styled from '@emotion/styled';
 
 import headshot from 'images/headshot.jpg';
+import SkillPill from 'compoents/SkillPill';
 
 import commonStyles from '../common.module.css';
 import styles from './AboutMe.module.css';
@@ -17,12 +18,12 @@ const SectionDiv = styled.div`
 
 const AboutMe = () => (
   <div className={`${commonStyles.MarginX}`}>
-    <h1 className={`w-100 text-center my-5 ${commonStyles.TitleText}`}>About Me</h1>
+    <h1 className={`text-center my-5 ${commonStyles.TitleText}`}>About Me</h1>
     <Row>
       <Col xs={12} md={4}>
         <img src={headshot} alt="headshot" className={`${styles.Headshot} me-5 mb-4`} />
       </Col>
-      <Col>
+      <Col xs={12} md={8}>
         <SectionDiv>
           Hi! 我是一名自學轉職的前端工程師，由於有自學的經驗，我有自信在工作中遭遇到問題時，獨力搜尋並解決問題，並在學習新技術上更有心得。
         </SectionDiv>
@@ -35,25 +36,16 @@ const AboutMe = () => (
         <SectionDiv>
           參與過 webpack 與 Grunt + RequireJS 的開發環境建置，以及 GitLab CI/CD YAML file 設定，作為一名前端工程師，不只是開發網頁，對於開發流程也有所理解。
         </SectionDiv>
-        <SectionDiv>
-          <span className={`${styles.SkillPill}`}>
-            JavaScript
-          </span>
-          <span className={`${styles.SkillPill}`}>
-            webpack
-          </span>
-          <span className={`${styles.SkillPill}`}>
-            React
-          </span>
-          <span className={`${styles.SkillPill}`}>
-            Redux
-          </span>
-          <span className={`${styles.SkillPill}`}>
-            CSS Modules
-          </span>
-          <span className={`${styles.SkillPill}`}>
-            Emotion
-          </span>
+        <SectionDiv className="d-flex flex-wrap">
+          <SkillPill>JavaScript</SkillPill>
+          <SkillPill>webpack</SkillPill>
+          <SkillPill>React</SkillPill>
+          <SkillPill>Redux</SkillPill>
+          <SkillPill>HTML</SkillPill>
+          <SkillPill>CSS</SkillPill>
+          <SkillPill>Sass</SkillPill>
+          <SkillPill>CSS Modules</SkillPill>
+          <SkillPill>Emotion</SkillPill>
         </SectionDiv>
       </Col>
     </Row>
