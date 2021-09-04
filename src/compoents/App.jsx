@@ -10,6 +10,8 @@ import LangBtn from './LangBtn';
 import styles from './App.module.css';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
+import WorkExperience from './WorkExperience';
+import Portfolio from './Portfolio';
 
 const App = () => {
   const { t } = useTranslation();
@@ -67,18 +69,18 @@ const App = () => {
       </Navbar>
       <header
         ref={sectionRefs[0]}
-        className={`d-flex justify-content-center align-items-center ${styles.Vh100} ${styles.HeaderColor}`}
+        className={`d-flex justify-content-center align-items-center ${styles.Header}`}
       >
         <div className={`${styles.HeaderAnimation}`}>
           <h1>Hi, I&apos;m Heterosis!</h1>
           <p className="text-center">在前端工程師的路上不斷努力</p>
         </div>
       </header>
-      <section ref={sectionRefs[1]} className="mb-5"><AboutMe /></section>
-      <section ref={sectionRefs[2]} className="mb-5"><Skills /></section>
-      <section ref={sectionRefs[3]} className={`${styles.Vh100}`}><h1>Section 3</h1></section>
-      <section ref={sectionRefs[4]} className={`${styles.Vh100}`}><h1>Section 4</h1></section>
-      <section ref={sectionRefs[5]} className={`${styles.Vh100}`}><h1>Section 5</h1></section>
+      <section ref={sectionRefs[1]} className={`${styles.SectionWrapper}`}><AboutMe /></section>
+      <section ref={sectionRefs[2]} className={`${styles.SectionWrapper}`}><Skills /></section>
+      <section ref={sectionRefs[3]} className={`${styles.SectionWrapper}`}><WorkExperience /></section>
+      <section ref={sectionRefs[4]} className={`${styles.SectionWrapper}`}><Portfolio /></section>
+      <section ref={sectionRefs[5]} className={`${styles.SectionWrapper}`}><h1>Section 5</h1></section>
       <LangBtn />
       <h1>{t('title')}</h1>
     </div>

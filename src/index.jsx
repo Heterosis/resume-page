@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-multi-carousel/lib/styles.css';
 import 'css/index.css';
 import './fontawesome';
 import './i18n';

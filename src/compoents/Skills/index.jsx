@@ -9,7 +9,7 @@ const Skills = () => {
     {
       icon: ['fas', 'keyboard'],
       classification: 'Web Development',
-      skills: ['HTML5', 'CSS', 'Sass', 'CSS Modules', 'Emotion', 'JavaScript', 'webpack', 'npm', 'ESLint', 'Grunt', 'Bower', 'RequireJS', 'Node.js', 'Git'],
+      skills: ['HTML5', 'CSS', 'Sass', 'CSS Modules', 'Emotion', 'JavaScript', 'webpack', 'GitLab CI/CD ', 'npm', 'Babel', 'ESLint', 'Grunt', 'Bower', 'RequireJS', 'Node.js', 'Git'],
     },
     {
       icon: ['fab', 'react'],

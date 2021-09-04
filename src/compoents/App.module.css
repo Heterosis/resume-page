@@ -6,11 +6,12 @@
   color: #000080;
 }
 
-.Vh100 {
-  min-height: 100vh;
+.SectionWrapper {
+  margin-bottom: 100px;
 }
 
-.HeaderColor {
+.Header {
+  height: 100vh;
   background-color: rgb(76, 230, 179);
   transition: background-color 0.25s;
 }
