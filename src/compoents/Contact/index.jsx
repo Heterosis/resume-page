@@ -5,7 +5,8 @@ import hash from 'object-hash';
 import commonStyles from '../common.module.css';
 import ContactCircle from './ContactCircle';
 
-const Contact = () => {
+const Contact = (props) => {
+  const { navExpand } = props;
   const contactArr = [
     {
       icon: ['fab', 'github'], title: 'GitHub', info: 'Heterosis', link: 'https://github.com/Heterosis/',
@@ -21,7 +22,7 @@ const Contact = () => {
   return (
     <div className={`${commonStyles.MarginX}`}>
       <h1 className={`text-center my-5 ${commonStyles.TitleText}`}>Contact</h1>
-      <div className="d-flex justify-content-center align-items-center">
+      <div className={`d-flex justify-content-center align-items-center ${navExpand ? '' : 'flex-column'}`}>
         {contactArr.map((contactData, index) => (
           <ContactCircle
             key={hash(`${_.toString(contactData)}${index}`)}

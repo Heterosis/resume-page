@@ -1,7 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import {
+  Navbar, Nav, NavDropdown,
+} from 'react-bootstrap';
 import useScrollSpy from 'react-use-scrollspy';
 import _ from 'lodash';
 import hash from 'object-hash';
@@ -15,6 +17,8 @@ import Contact from './Contact';
 
 const App = () => {
   const { t, i18n } = useTranslation();
+  const [navExpand, setNavExpand] = useState(true);
+  const navToggleRef = useRef(null);
 
   const sections = [
     { title: 'header', ref: useRef(null), showNav: false },
@@ -37,48 +41,70 @@ const App = () => {
     const y = ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y });
+
+    if (navToggleRef.current && !navExpand) {
+      navToggleRef.current.click();
+    }
   };
+
+  const handleResize = () => {
+    if (window.innerWidth < 700) {
+      setNavExpand(false);
+    } else {
+      setNavExpand(true);
+    }
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return window.addEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div>
-      <Navbar fixed="top" className={`${activeSection > 0 ? styles.NavbarColor : styles.TopNavbarColor} ${styles.Navbar}`}>
-        <Nav className="d-flex justify-content-between align-items-center w-100">
-          <div className="d-flex justify-content-center align-items-center">
-            {_.map(sections, (section, index) => {
-              if (section.showNav) {
-                return (
-                  <Nav.Item
-                    key={hash(`${_.toString(section)}${index}`)}
-                    className="d-flex align-items-center mx-2"
-                  >
-                    <Nav.Link
-                      onClick={() => {
-                        handleScrollto(section.ref);
-                      }}
+      <Navbar collapseOnSelect expand={navExpand} fixed="top" className={`${activeSection > 0 ? styles.NavbarColor : styles.TopNavbarColor} ${styles.Navbar}`}>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" ref={navToggleRef} className="ms-auto me-3" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="justify-content-between align-items-center w-100">
+            <div className={`d-flex justify-content-center align-items-center flex-wrap ${navExpand ? '' : 'flex-column'}`}>
+              {_.map(sections, (section, index) => {
+                if (section.showNav) {
+                  return (
+                    <Nav.Item
+                      key={hash(`${_.toString(section)}${index}`)}
+                      className="d-flex align-items-center mx-2"
                     >
-                      {section.title}
-                    </Nav.Link>
-                  </Nav.Item>
-                );
-              }
+                      <Nav.Link
+                        onClick={() => {
+                          handleScrollto(section.ref);
+                        }}
+                      >
+                        {section.title}
+                      </Nav.Link>
+                    </Nav.Item>
+                  );
+                }
 
-              return null;
-            })}
-          </div>
-          <div className="d-flex justify-content-center align-items-center">
-            <NavDropdown
-              title={<FontAwesomeIcon icon={['fas', 'language']} style={{ fontSize: 30 }} />}
-            >
-              <NavDropdown.Item onClick={() => { i18n.changeLanguage('en'); }}>English</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => { i18n.changeLanguage('zh'); }}>中文</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Item className={`d-flex justify-content-center align-items-center ${styles.NavbarBtn}`}>
-              <Nav.Link href="https://github.com/Heterosis/resume-site" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30 }} />
-              </Nav.Link>
-            </Nav.Item>
-          </div>
-        </Nav>
+                return null;
+              })}
+            </div>
+            <div className={`d-flex justify-content-center align-items-center ${navExpand ? '' : 'flex-column-reverse'}`}>
+              <NavDropdown
+                title={<FontAwesomeIcon icon={['fas', 'language']} style={{ fontSize: 30 }} />}
+              >
+                <NavDropdown.Item onClick={() => { i18n.changeLanguage('en'); }}>English</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => { i18n.changeLanguage('zh'); }}>中文</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Item className={`d-flex justify-content-center align-items-center ${styles.NavbarBtn}`}>
+                <Nav.Link href="https://github.com/Heterosis/resume-site" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30 }} />
+                </Nav.Link>
+              </Nav.Item>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
       <header
         ref={sectionRefs[0]}
@@ -93,7 +119,7 @@ const App = () => {
       <section ref={sectionRefs[2]} className={`${styles.SectionWrapper}`}><Skills /></section>
       <section ref={sectionRefs[3]} className={`${styles.SectionWrapper}`}><WorkExperience /></section>
       <section ref={sectionRefs[4]} className={`${styles.SectionWrapper}`}><Portfolio /></section>
-      <section ref={sectionRefs[5]} className={`${styles.SectionWrapper}`}><Contact /></section>
+      <section ref={sectionRefs[5]} className={`${styles.SectionWrapper}`}><Contact navExpand={navExpand} /></section>
     </div>
   );
 };
