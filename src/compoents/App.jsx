@@ -1,20 +1,20 @@
 import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import useScrollSpy from 'react-use-scrollspy';
 import _ from 'lodash';
 import hash from 'object-hash';
 
-import LangBtn from './LangBtn';
 import styles from './App.module.css';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
 import WorkExperience from './WorkExperience';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 const App = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const sections = [
     { title: 'header', ref: useRef(null), showNav: false },
@@ -41,30 +41,43 @@ const App = () => {
 
   return (
     <div>
-      <Navbar fixed="top" className={`${activeSection > 0 ? styles.NavbarColor : styles.HeaderColor}`}>
-        <Nav>
-          {_.map(sections, (section) => {
-            if (section.showNav) {
-              return (
-                <Nav.Item key={hash(_.omit(section, ['ref']))} className="d-flex align-items-center">
-                  <Nav.Link
-                    onClick={() => {
-                      handleScrollto(section.ref);
-                    }}
+      <Navbar fixed="top" className={`${activeSection > 0 ? styles.NavbarColor : styles.TopNavbarColor} ${styles.Navbar}`}>
+        <Nav className="d-flex justify-content-between align-items-center w-100">
+          <div className="d-flex justify-content-center align-items-center">
+            {_.map(sections, (section, index) => {
+              if (section.showNav) {
+                return (
+                  <Nav.Item
+                    key={hash(`${_.toString(section)}${index}`)}
+                    className="d-flex align-items-center mx-2"
                   >
-                    {section.title}
-                  </Nav.Link>
-                </Nav.Item>
-              );
-            }
+                    <Nav.Link
+                      onClick={() => {
+                        handleScrollto(section.ref);
+                      }}
+                    >
+                      {section.title}
+                    </Nav.Link>
+                  </Nav.Item>
+                );
+              }
 
-            return null;
-          })}
-          <Nav.Item className="d-flex align-items-center">
-            <Nav.Link href="https://github.com/Heterosis/resume-site" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30 }} />
-            </Nav.Link>
-          </Nav.Item>
+              return null;
+            })}
+          </div>
+          <div className="d-flex justify-content-center align-items-center">
+            <NavDropdown
+              title={<FontAwesomeIcon icon={['fas', 'language']} style={{ fontSize: 30 }} />}
+            >
+              <NavDropdown.Item onClick={() => { i18n.changeLanguage('en'); }}>English</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { i18n.changeLanguage('zh'); }}>中文</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Item className={`d-flex justify-content-center align-items-center ${styles.NavbarBtn}`}>
+              <Nav.Link href="https://github.com/Heterosis/resume-site" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30 }} />
+              </Nav.Link>
+            </Nav.Item>
+          </div>
         </Nav>
       </Navbar>
       <header
@@ -73,16 +86,14 @@ const App = () => {
       >
         <div className={`${styles.HeaderAnimation}`}>
           <h1>Hi, I&apos;m Heterosis!</h1>
-          <p className="text-center">在前端工程師的路上不斷努力</p>
+          <p className="text-center">{t('headerText')}</p>
         </div>
       </header>
       <section ref={sectionRefs[1]} className={`${styles.SectionWrapper}`}><AboutMe /></section>
       <section ref={sectionRefs[2]} className={`${styles.SectionWrapper}`}><Skills /></section>
       <section ref={sectionRefs[3]} className={`${styles.SectionWrapper}`}><WorkExperience /></section>
       <section ref={sectionRefs[4]} className={`${styles.SectionWrapper}`}><Portfolio /></section>
-      <section ref={sectionRefs[5]} className={`${styles.SectionWrapper}`}><h1>Section 5</h1></section>
-      <LangBtn />
-      <h1>{t('title')}</h1>
+      <section ref={sectionRefs[5]} className={`${styles.SectionWrapper}`}><Contact /></section>
     </div>
   );
 };

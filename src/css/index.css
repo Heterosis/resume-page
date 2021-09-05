@@ -1,4 +1,4 @@
-#app {
+body {
   background-color: rgb(242, 242, 242);
 }
 
@@ -8,4 +8,12 @@
 
 .react-multiple-carousel__arrow--right {
   right: 0;
+}
+
+.react-multi-carousel-item {
+  margin-left: 10px;
+}
+
+.nav-item .dropdown-menu {
+  right: 0
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import _ from 'lodash';
+import hash from 'object-hash';
 
 import commonStyles from '../common.module.css';
 import SkillCol from './SkillCol';
@@ -27,8 +29,8 @@ const Skills = () => {
     <div className={`${commonStyles.MarginX}`}>
       <h1 className={`text-center my-5 ${commonStyles.TitleText}`}>Skills</h1>
       <Row className="justify-content-around">
-        {skillsData.map((skillData) => (
-          <Col xs={12} md={4}>
+        {skillsData.map((skillData, index) => (
+          <Col key={hash(`${_.toString(skillData)}${index}`)} md={12} lg={4}>
             <SkillCol skillData={skillData} />
           </Col>
         ))}

@@ -1,4 +1,5 @@
 import React from 'react';
+import hash from 'object-hash';
 
 import SkillPill from 'compoents/SkillPill';
 
@@ -15,7 +16,7 @@ const Project = (props) => {
       <h5 className={`${styles.ProjectName}`}>{projectName}</h5>
       <div>{projectDescription}</div>
       <div className={`${styles.SkillPills}`}>
-        {skills.map((skill) => <SkillPill>{skill}</SkillPill>)}
+        {skills.map((skill) => <SkillPill key={hash(skill)}>{skill}</SkillPill>)}
       </div>
     </>
   );

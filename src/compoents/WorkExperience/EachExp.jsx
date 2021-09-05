@@ -1,5 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import _ from 'lodash';
+import hash from 'object-hash';
 
 import styles from './WorkExperience.module.css';
 import Project from './Project';
@@ -26,7 +28,12 @@ const WorkExperience = (props) => {
         <div className={`${styles.Title}`}>
           {jobTitle}
         </div>
-        {projects.map((project) => <Project project={project} />)}
+        {projects.map((project, index) => (
+          <Project
+            key={hash(`${_.toString(project)}${index}`)}
+            project={project}
+          />
+        ))}
       </div>
     </div>
   );

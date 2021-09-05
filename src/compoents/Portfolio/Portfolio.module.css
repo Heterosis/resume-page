@@ -1,85 +1,15 @@
-.ExperienceRow {
-  padding-left: 15px;
-  border-left: 2px solid rgb(13, 89, 64);
-  transition: all 0.4s;
+.PortfolioCard {
+  height: 400px;
+  width: 100%;
+  margin: 0 20px 25px;
 }
 
-.ExperienceRow:hover {
-  border-left: 2px solid rgb(102, 204, 0);
-}
-
-.ExperienceDate {
-  color: white;
-  padding: 4px 15px;
-  background-color: rgb(13, 89, 64);
-  border-radius: 0.5em;
-  transition: all 0.4s;
-}
-
-.ExperienceRow:hover .ExperienceDate {
-  color: rgb(51, 51, 51);
-  background-color: rgb(102, 204, 0);
-}
-
-.BookmarkIconWrapper {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(242, 242, 242);
-  border-radius: 10%;
-  margin-left: -30px;
-  margin-right: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.BookmarkIcon {
+.PortfolioIcon {
+  color: rgb(22, 156, 112);
   font-size: 20px;
+  transition: all 0.3s;
+}
+
+.PortfolioIcon:hover {
   color: rgb(13, 89, 64);
-  transition: all 0.4s;
-}
-
-.ExperienceRow:hover .BookmarkIcon {
-  left: -27px;
-  color: rgb(102, 204, 0);
-}
-
-.ExperienceContent {
-  margin: 0 24px;
-}
-
-.CompanyRow {
-  margin: 10px 0;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.Company {
-  margin-right: 1em;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.Location {
-  margin-right: 2em;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.Title {
-  margin: 10px 0 20px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.ProjectName::before {
-  content: "- ";
-  margin-right: 0.25em;
-}
-
-.SkillPills {
-  display: flex;
-  justify-content: end;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
 }

@@ -1,9 +1,14 @@
 import React from 'react';
+import hash from 'object-hash';
+import _ from 'lodash';
+import { useTranslation } from 'react-i18next';
 
 import commonStyles from '../common.module.css';
 import EachExp from './EachExp';
 
 const WorkExperience = () => {
+  const { t } = useTranslation();
+
   const experienceArr = [
     {
       startDate: 'Dec. 2020',
@@ -13,27 +18,21 @@ const WorkExperience = () => {
       jobTitle: 'Frontend Engineer',
       projects: [
         {
-          projectName: <a href="https://cloud.engenius.ai/" target="_blank" rel="noreferrer">Web GUI of EnGenius Cloud</a>,
+          projectName: <a href="https://cloud.engenius.ai/" target="_blank" rel="noreferrer">{t('workExperience.senao.projects.enGeniusCloud.name')}</a>,
           projectDescription: (
             <ol>
-              <li>Implement new features and maintain existing code</li>
-              <li>
-                Communicate with UI/UX and Product Manager and
-                evaluate product software implementation methods
-              </li>
+              <li>{t('workExperience.senao.projects.enGeniusCloud.descriptions.0')}</li>
+              <li>{t('workExperience.senao.projects.enGeniusCloud.descriptions.1')}</li>
             </ol>
           ),
           skills: ['React', 'React Hook', 'React Router', 'react-i18next', 'Flux', 'reactstrap', 'Bootstrap', 'Sass', 'webpack'],
         },
         {
-          projectName: 'Web GUI of a self-hosted management tool for Enterprise-Level networks',
+          projectName: t('workExperience.senao.projects.selfHostedManagementTool.name'),
           projectDescription: (
             <ol>
-              <li>Implement new features and maintain existing code</li>
-              <li>
-                Communicate with UI/UX and Product Manager and
-                evaluate product software implementation methods
-              </li>
+              <li>{t('workExperience.senao.projects.selfHostedManagementTool.descriptions.0')}</li>
+              <li>{t('workExperience.senao.projects.selfHostedManagementTool.descriptions.1')}</li>
             </ol>
           ),
           skills: ['React', 'React Hook', 'React Router', 'Redux', 'Redux-Saga', 'reactstrap', 'Bootstrap', 'Sass', 'webpack'],
@@ -48,25 +47,22 @@ const WorkExperience = () => {
       jobTitle: 'Frontend Engineer',
       projects: [
         {
-          projectName: 'Web GUI of AmberPRO and Amber X',
+          projectName: t('workExperience.latticeWork.projects.amber.name'),
           projectDescription: (
             <ol>
-              <li>Implement new features and maintain existing code</li>
-              <li>
-                Communicate with UI/UX and Product Manager and
-                evaluate product software implementation methods
-              </li>
+              <li>{t('workExperience.latticeWork.projects.amber.descriptions.0')}</li>
+              <li>{t('workExperience.latticeWork.projects.amber.descriptions.1')}</li>
             </ol>
           ),
           skills: ['Backbone.js', 'Bootstrap', 'jQuery', 'i18next', 'Sass', 'Grunt', 'RequireJS', 'GitLab CI/CD'],
         },
         {
-          projectName: 'Migrate Development Environment',
+          projectName: t('workExperience.latticeWork.projects.migrateDevelopmentEnvironment.name'),
           projectDescription: (
             <ol>
-              <li>Migrate package manager from Bower to npm</li>
-              <li>Migrate module bundler from Grunt+RequireJS to webpack</li>
-              <li>Integrate Babel and ESLint to support ES6+ features</li>
+              <li>{t('workExperience.latticeWork.projects.migrateDevelopmentEnvironment.descriptions.0')}</li>
+              <li>{t('workExperience.latticeWork.projects.migrateDevelopmentEnvironment.descriptions.1')}</li>
+              <li>{t('workExperience.latticeWork.projects.migrateDevelopmentEnvironment.descriptions.2')}</li>
             </ol>
           ),
           skills: ['npm', 'webpack', 'Babel', 'ESLint', 'GitLab CI/CD'],
@@ -78,7 +74,12 @@ const WorkExperience = () => {
   return (
     <div className={`${commonStyles.MarginX}`}>
       <h1 className={`text-center my-5 ${commonStyles.TitleText}`}>Work Experience</h1>
-      {experienceArr.map((experience) => <EachExp experience={experience} />)}
+      {experienceArr.map((experience, index) => (
+        <EachExp
+          key={hash(`${_.toString(experience)}${index}`)}
+          experience={experience}
+        />
+      ))}
     </div>
   );
 };
