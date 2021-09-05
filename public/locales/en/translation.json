@@ -2,7 +2,7 @@
     "headerText": "Constant catching up in Frontend engineering",
     "aboutMe": {
         "introduce": "Hi! I am a self-taught frontend engineer. Due to the self-taught experience, I am confident with solving problems by myself and learning new skills quickly.",
-        "frontFrame": "Currently developing products with tools from React + Flux/Redux ecosystem, including React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
+        "frontFrame": "Currently developing products with tools from React + Flux/Redux ecosystem, includes React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
         "styleExp": "Experienced with Sass and CSS Modules, I am working on studying Emotion to improve my web styling skiils.",
         "buildEnv": "Knowing the development process: I have the experience of setting up webpack, Grunt + RequireJS and GitLab CI/CD YAML files."
     },
