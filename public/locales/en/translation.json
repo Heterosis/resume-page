@@ -2,8 +2,8 @@
     "headerText": "Constant catching up in Frontend engineering",
     "aboutMe": {
         "introduce": "Hi! I am a self-taught frontend engineer. Due to the self-taught experience, I am confident with solving problems by myself and learning new skills quickly.",
-        "frontFrame": "Currently developing products with tools from React + Flux/Redux ecosystem, includes React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
-        "styleExp": "Experienced with Sass and CSS Modules, I am working on studying Emotion to improve my web styling skiils.",
+        "frontFrame": "Currently I develop products with tools from React + Flux/Redux ecosystem, including React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
+        "styleExp": "Experienced with Sass and CSS Modules, I am working on studying Emotion to improve my web styling skills.",
         "buildEnv": "Knowing the development process: I have the experience of setting up webpack, Grunt + RequireJS and GitLab CI/CD YAML files."
     },
     "workExperience": {
@@ -21,7 +21,7 @@
                 },
                 "selfHostedManagementTool": {
                     "name": "Web GUI of a self-hosted management tool for Enterprise-Level networks",
-                    "target": "Implement self-hosted version of EnGenius Cloud, that clients can run it on their own server.",
+                    "target": "Implement a self-hosted version of EnGenius Cloud, that clients can run on their own server.",
                     "value": "Under development.",
                     "details": [
                         "Migrate from Flux to Redux and rewrite related functions.",
@@ -44,7 +44,7 @@
                 "migrateDevelopmentEnvironment": {
                     "name": "Migrate Development Environment",
                     "target": "Support ES6+ features and give up the deprecated Bower.",
-                    "value": "Save a lot of time on finding packages and product developing.",
+                    "value": "Save a lot of time on finding packages and product development.",
                     "details": [
                         "Migrate package manager from Bower to npm",
                         "Migrate module bundler from Grunt+RequireJS to webpack",
