@@ -24,7 +24,7 @@ const App = () => {
     { title: 'header', ref: useRef(null), showNav: false },
     { title: 'About Me', ref: useRef(null), showNav: true },
     { title: 'Skills', ref: useRef(null), showNav: true },
-    { title: 'Work Experience', ref: useRef(null), showNav: true },
+    { title: 'Experience', ref: useRef(null), showNav: true },
     { title: 'Portfolio', ref: useRef(null), showNav: true },
     { title: 'Contact', ref: useRef(null), showNav: true },
   ];
