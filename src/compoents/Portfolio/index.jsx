@@ -4,6 +4,7 @@ import _ from 'lodash';
 import hash from 'object-hash';
 
 import resumeSiteImg from 'images/resume-site.png';
+import freeGamesSite from 'images/free-games-site.png';
 import randomQuoteMachineImg from 'images/random-quote-machine.png';
 import ticTacToeImg from 'images/tic-tac-toe.png';
 import toDoListImg from 'images/to-do-list.png';
@@ -34,6 +35,20 @@ const Portfolio = () => {
       imgSrc: resumeSiteImg,
       link: 'https://heterosis.github.io/resume-site/',
       repository: 'https://github.com/Heterosis/resume-site',
+    },
+    {
+      title: 'Free Games Site',
+      description: (
+        <>
+          A website that list free games utilizing API from
+          {' '}
+          <a href="https://www.freetogame.com/api-doc" target="_blank" rel="noreferrer">Free-To-Play Games Database API</a>
+          .
+        </>
+      ),
+      imgSrc: freeGamesSite,
+      link: 'https://heterosis.github.io/free-games-site/',
+      repository: 'https://github.com/Heterosis/free-games-site',
     },
     {
       title: 'Random Quote Machine',
