@@ -11,15 +11,20 @@
             "projects": {
                 "enGeniusCloud": {
                     "name": "Web GUI of EnGenius Cloud",
-                    "descriptions": [
-                        "Implement new features and maintain existing code",
-                        "Communicate with UI/UX and Product Manager and evaluate product software implementation methods"
+                    "target": "Implement web GUI to manage Enterprise-Level switch and access point devices produces by Senao Networks.",
+                    "value": "The Enterprise-Level devices take about 85% of Senao Networks' income.",
+                    "details": [
+                        "Design the whole Backup and Switch Template page.",
+                        "Rewrite the Add Node modal.",
+                        "Maintain existing code."
                     ]
                 },
                 "selfHostedManagementTool": {
                     "name": "Web GUI of a self-hosted management tool for Enterprise-Level networks",
-                    "descriptions": [
-                        "Implement new features and maintain existing code",
+                    "target": "Implement self-hosted version of EnGenius Cloud, that clients can run it on their own server.",
+                    "value": "Under development.",
+                    "details": [
+                        "Migrate from Flux to Redux and rewrite related functions.",
                         "Communicate with UI/UX and Product Manager and evaluate product software implementation methods"
                     ]
                 }
@@ -29,20 +34,33 @@
             "projects": {
                 "amber": {
                     "name": "Web GUI of AmberPRO and Amber X",
-                    "descriptions": [
+                    "target": "Implement the embedded web GUI to manage AmberPRO and Amber X, a combination of NAS and router.",
+                    "value": "Clients must configure devices through web GUI.",
+                    "details": [
                         "Implement new features and maintain existing code",
                         "Communicate with UI/UX and Product Manager and evaluate product software implementation methods"
                     ]
                 },
                 "migrateDevelopmentEnvironment": {
                     "name": "Migrate Development Environment",
-                    "descriptions": [
+                    "target": "Support ES6+ features and give up the deprecated Bower.",
+                    "value": "Save a lot of time on finding packages and product developing.",
+                    "details": [
                         "Migrate package manager from Bower to npm",
                         "Migrate module bundler from Grunt+RequireJS to webpack",
                         "Integrate Babel and ESLint to support ES6+ features"
                     ]
                 }
             }
+        },
+        "nuk": {
+            "companyName": "National University of Kaohsiung",
+            "jobTitle": "Life Sciences, Bachelor's Degree"
         }
+    },
+    "common": {
+        "target": "Target",
+        "value": "Value",
+        "details": "Details"
     }
 }

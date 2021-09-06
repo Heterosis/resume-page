@@ -11,15 +11,20 @@
             "projects": {
                 "enGeniusCloud": {
                     "name": "EnGenius Cloud 網頁界面",
-                    "descriptions": [
-                        "開發新功能並維護現有產品",
-                        "與 UI/UX 及 PM 溝通，評估產品實做方式"
+                    "target": "實做 Senao Networks 生產企業級網路交換器與無線存取點裝置之雲端管理界面。",
+                    "value": "Senao Networks 生產之企業級網路裝置約佔公司 85% 的營收。",
+                    "details": [
+                        "設計 Backup 與 Switch Template 頁面",
+                        "重寫 Add Node 互動視窗",
+                        "維護現有程式"
                     ]
                 },
                 "selfHostedManagementTool": {
                     "name": "可自我裝載的企業級網路管理工具之網頁界面",
-                    "descriptions": [
-                        "開發新功能並維護現有產品",
+                    "target": "實做可自我裝載的裝置管理界面，讓客戶可以在自己的伺服器上架設管理系統",
+                    "value": "開發中。",
+                    "details": [
+                        "將程式環境從 Flux 轉移至 Redux，並重寫相關函式",
                         "與 UI/UX 及 PM 溝通，評估產品實做方式"
                     ]
                 }
@@ -29,20 +34,33 @@
             "projects": {
                 "amber": {
                     "name": "AmberPRO 及 Amber X 之網頁界面",
-                    "descriptions": [
-                        "開發新功能並維護現有產品",
+                    "target": "實做 AmberPRO 與 Amber X，其為 NAS 與路由器結合的裝置，的嵌入式網頁管理界面。",
+                    "value": "客戶必須透過該網頁界面才可以設定裝置。",
+                    "details": [
+                        "開發新功能並維護現有程式",
                         "與 UI/UX 及 PM 溝通，評估產品實做方式"
                     ]
                 },
                 "migrateDevelopmentEnvironment": {
                     "name": "開發環境轉移",
-                    "descriptions": [
+                    "target": "支援 ES6+ 功能並捨棄已棄用的 Bower 軟體套件管理系統。",
+                    "value": "節省許多尋找套件的時間，並且 ES6+ 功能也讓開發時間降低。",
+                    "details": [
                         "將軟體套件管理系統由 Bower 轉移至 npm",
                         "將前端打包工具由 Grunt + RequireJS 轉移至 webpack",
                         "導入 Babel 與 ESLint，讓 Backbone.js 也可以使用 ES6+ 功能"
                     ]
                 }
             }
+        },
+        "nuk": {
+            "companyName": "國立高雄大學",
+            "jobTitle": "生命科學，學士學位"
         }
+    },
+    "common": {
+        "target": "目標",
+        "value": "價值",
+        "details": "細節"
     }
 }
