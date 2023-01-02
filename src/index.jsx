@@ -7,8 +7,8 @@ import 'css/index.css';
 import './fontawesome';
 import './i18n';
 
-import App from 'compoents/App';
-import Loading from 'compoents/Loading';
+import App from 'components/App';
+import Loading from 'components/Loading';
 
 ReactDOM.render(
   <Suspense fallback={<Loading />}>

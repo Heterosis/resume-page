@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 import { useTranslation } from 'react-i18next';
 
 import headshot from 'images/headshot.jpg';
-import SkillPill from 'compoents/SkillPill';
+import SkillPill from 'components/SkillPill';
 
 import commonStyles from '../common.module.css';
 import styles from './AboutMe.module.css';
@@ -42,6 +42,8 @@ const AboutMe = () => {
           </SectionDiv>
           <SectionDiv className="d-flex flex-wrap">
             <SkillPill>JavaScript</SkillPill>
+            <SkillPill>TypeScript</SkillPill>
+            <SkillPill>Golang</SkillPill>
             <SkillPill>webpack</SkillPill>
             <SkillPill>React</SkillPill>
             <SkillPill>Redux</SkillPill>

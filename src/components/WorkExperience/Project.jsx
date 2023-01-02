@@ -2,7 +2,7 @@ import React from 'react';
 import hash from 'object-hash';
 import { useTranslation } from 'react-i18next';
 
-import SkillPill from 'compoents/SkillPill';
+import SkillPill from 'components/SkillPill';
 
 import styles from './WorkExperience.module.css';
 
