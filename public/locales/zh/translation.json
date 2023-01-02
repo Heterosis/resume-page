@@ -51,7 +51,7 @@
                 "enGeniusCloud": {
                     "name": "EnGenius Cloud 網頁界面",
                     "target": "實做 Senao Networks 生產企業級網路交換器與無線存取點裝置之雲端管理界面。",
-                    "value": "Senao Networks 生產之企業級網路裝置約佔公司 85% 的營收。",
+                    "value": "節省大量裝置設定的時間，讓客戶可以更快速的將裝置接入到整個企業網路中。",
                     "details": [
                         "設計 Backup 與 Switch Template 頁面，Backup 頁面可用來備份 network 的設定並可隨時還原，Switch Template 可以創建 Switch 的設定範本，並可套用到整個 network 裡所有特定型號的 switch 上。",
                         "以 React Hooks 重寫 Add Node 互動視窗，使其更容易維護。",
@@ -59,8 +59,8 @@
                     ]
                 },
                 "selfHostedManagementTool": {
-                    "name": "可自我裝載的企業級網路管理工具之網頁界面",
-                    "target": "實做可自我裝載的裝置管理界面，讓客戶可以在自己的伺服器上架設管理系統",
+                    "name": "可自我架設的企業級網路管理工具之網頁界面",
+                    "target": "實做可自我架設的裝置管理界面，讓客戶可以在自己的伺服器上架設管理界面，並可透過此界面管理裝置。",
                     "value": "開發中。",
                     "details": [
                         "將程式環境從 Flux 轉移至 Redux 並重寫相關函式，用 Redux-Saga 處理 async functions 及 side effects。",
@@ -75,7 +75,7 @@
                 "amber": {
                     "name": "AmberPRO 及 Amber X 之網頁界面",
                     "target": "實做 AmberPRO 與 Amber X，其為 NAS 與路由器結合的裝置，的嵌入式網頁管理界面。",
-                    "value": "客戶必須透過該網頁界面才可以設定裝置。",
+                    "value": "客戶可以快速並直覺地完成裝置的設定，並且可以透過網頁管理界面來管理裝置。",
                     "details": [
                         "以 Backbone.js 及 jQuery 開發新功能並除錯現有程式",
                         "與 UI/UX 及 PM 溝通，評估產品實做方式"
@@ -84,7 +84,7 @@
                 "migrateDevelopmentEnvironment": {
                     "name": "開發環境轉移",
                     "target": "支援 ES6+ 功能並捨棄已棄用的 Bower 軟體套件管理系統。",
-                    "value": "節省許多尋找套件的時間，並且 ES6+ 功能也讓開發時間降低。",
+                    "value": "節省許多尋找套件的時間，並且 ES6+ 功能也讓開發時間大幅降低。",
                     "details": [
                         "將軟體套件管理系統由 Bower 轉移至 npm",
                         "將前端打包工具由 Grunt + RequireJS 轉移至 webpack",
