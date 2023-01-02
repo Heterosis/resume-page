@@ -29,7 +29,7 @@ const WorkExperience = () => {
               <li>{t('workExperience.tiktok.projects.contentSafetyPlatform.details.3')}</li>
             </ol>
           ),
-          skills: ['React', 'Golang', 'MobX', 'React Hook', 'React Router', 'react-i18next', 'Semi-UI', 'Scss', 'webpack'],
+          skills: ['React', 'TypeScript', 'Golang', 'MobX', 'React Hook', 'React Router', 'react-i18next', 'Semi-UI', 'Scss', 'webpack'],
         }, {
           projectName: t('workExperience.tiktok.projects.searchFeature.name'),
           projectTarget: t('workExperience.tiktok.projects.searchFeature.target'),
@@ -43,7 +43,7 @@ const WorkExperience = () => {
               <li>{t('workExperience.tiktok.projects.searchFeature.details.4')}</li>
             </ol>
           ),
-          skills: ['React', 'Express', 'Reduck', 'React Hook', 'React Router', 'react-i18next', 'Semi-UI', 'Scss', 'webpack'],
+          skills: ['React', 'TypeScript', 'Express', 'Reduck', 'React Hook', 'React Router', 'react-i18next', 'Semi-UI', 'Scss', 'webpack'],
         },
       ],
     },
@@ -63,7 +63,7 @@ const WorkExperience = () => {
               <li>{t('workExperience.xfers.projects.indoPayment.details.0')}</li>
             </ol>
           ),
-          skills: ['React', 'React Hook', 'React Router', 'react-i18next', 'reactstrap', 'Bootstrap', 'Sass', 'webpack'],
+          skills: ['React', 'TypeScript', 'React Hook', 'React Router', 'react-i18next', 'reactstrap', 'Bootstrap', 'Sass', 'webpack'],
         },
       ],
     },
