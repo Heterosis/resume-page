@@ -1,5 +1,5 @@
 {
-    "headerText": "Constant catching up in Frontend engineering",
+    "headerText": "Constantly catching up in Frontend engineering",
     "aboutMe": {
         "introduce": "Hi! I am a self-taught frontend engineer. Due to the self-taught experience, I am confident with solving problems by myself and learning new skills quickly.",
         "frontFrame": "Currently I develop products with tools from React + Flux/Redux ecosystem, including React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
@@ -7,6 +7,45 @@
         "buildEnv": "Knowing the development process: I have the experience of setting up webpack, Grunt + RequireJS and GitLab CI/CD YAML files."
     },
     "workExperience": {
+        "tiktok": {
+            "projects": {
+                "contentSafetyPlatform": {
+                    "name": "Operating platform for TikTok content safety",
+                    "target": "Implement a web platform for content reviewers so they can target and eliminate unsafe contents on TikTok more efficiently.",
+                    "value": "Cut down 30% to 40% of the time for content reviewers to review contents averagely.",
+                    "details": [
+                        "Implement new features and debug existing codes for front-end projects.",
+                        "Refactor the codebase to improve the performance of the platform.",
+                        "Increase unit test coverage to 70% of base components.",
+                        "Implement BFF (Backend for Frontend) to reduce the number of requests to backend server."
+                    ]
+                },
+                "searchFeature": {
+                    "name": "New search platform",
+                    "target": "A faster search platform for content reviewers to locate unsafe contents on TikTok.",
+                    "value": "Provide multi-level search filters to content reviewers, so they can locate contents more efficiently.",
+                    "details": [
+                        "Construct the whole search platform from zero to production.",
+                        "Setup the development environment with webpack, Babel, ESLint, Prettier, lint-staged and Jest.",
+                        "Rapidly develop the whole project and deploy it to production in 2 weeks.",
+                        "Introduced permission control to both FE and BFF of the platform, so the content reviewers can only access the contents they are allowed to see and not able to send any unauthorized requests.",
+                        "Componentize the whole platform, so the platform can be easily extended to other projects."
+                    ]
+                }
+            }
+        },
+        "xfers": {
+            "projects": {
+                "indoPayment": {
+                    "name": "Payment system for indonesia area",
+                    "target": "Implement web GUI for store owners in indonesia, so they can easily manage whole xfers payment dashboard.",
+                    "value": "Provide an easy-to-use and intuitive user interface for users and reduce the learning curve.",
+                    "details": [
+                        "Implement new features and debug existing code with React and Redux."
+                    ]
+                }
+            }
+        },
         "senao": {
             "projects": {
                 "enGeniusCloud": {
