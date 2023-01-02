@@ -2,11 +2,50 @@
     "headerText": "在前端工程師的路上不斷努力",
     "aboutMe": {
         "introduce": "Hi! 我是一名自學轉職的前端工程師，由於有自學的經驗，我有自信在工作中遭遇到問題時，獨力搜尋並解決問題，並在學習新技術上更有心得。",
-        "frontFrame": "在前端框架上，使用過 Backbone.js + jQuery，目前主要使用 React + Flux/Redux 及其相關生態系的套件進行開發，目前主要以 React Hook 為主要的開發方式，在 Redux 的非同步處理 middleware 上則有 Redux-Saga 的使用經驗。",
+        "frontFrame": "在前端框架上，目前主要使用 React + Flux/Redux 及其相關生態系的套件進行開發，以 React Hook 為主要的開發方式，在 Redux 的非同步處理 middleware 上則有 Redux-Saga 的使用經驗，亦使用過 Backbone.js + jQuery 進行開發。",
         "styleExp": "樣式設計上有 Sass 與 CSS Modules 的使用經驗，目前也在研究 Emotion，期許自己能在開發能力上更精進。",
         "buildEnv": "參與過 webpack 與 Grunt + RequireJS 的開發環境建置，以及 GitLab CI/CD YAML file 設定，作為一名前端工程師，不只是開發網頁，對於開發流程也有所理解。"
     },
     "workExperience": {
+        "tiktok": {
+            "projects": {
+                "contentSafetyPlatform": {
+                    "name": "TikTok 內容安全平台",
+                    "target": "提供一個為內容審查人員審查 TikTok 內容的平台，讓內容審查人員可以更快速的找到並處理不當內容。",
+                    "value": "減少了約 30%-40% 的審查時間，讓內容審查人員可以更快速的找到並處理不當內容。",
+                    "details": [
+                        "實做新功能並修正現有的程式碼。",
+                        "重構現有的程式碼，讓程式碼更易於維護且擁有更高的執行效能。",
+                        "提昇單元測試的覆蓋率至 70%。",
+                        "實做 BFF 以減少前端與後端的溝通次數，提升前端的執行效能。"
+                    ]
+                },
+                "searchFeature": {
+                    "name": "全新的內容搜尋功能",
+                    "target": "提供一個更快的內容搜尋功能，讓內容審查人員可以更快速的找到不當內容。",
+                    "value": "為內容審查人員提供多種搜尋方式，提昇了幾乎加倍的搜尋效率。",
+                    "details": [
+                        "從零開始，設計並實做一個全新的內容搜尋功能專案。",
+                        "以 webpack、Babel、ESLint、Prettier、lint-staged 及 Jest 設立完整開發環境。",
+                        "每週快速迭代並在兩個月內完成產品上線。",
+                        "為專案的前端及 BFF 導入權限控制系統，讓內容審查人員無法存取未允許存取的內容，也無法直接發送未授權請求。",
+                        "組件化開發整個專案，讓其他專案可以輕易的使用此專案的組件。"
+                    ]
+                }
+            }
+        },
+        "xfers": {
+            "projects": {
+                "indoPayment": {
+                    "name": "印尼地區支付系統",
+                    "target": "為印尼地區的店主提供一個簡單易用的支付系統管理介面，讓店主可以管理 xfers 的支付系統。",
+                    "value": "提供一個簡單易用並直覺的支付系統介面，以減少學習成本，讓店主可以更快速的使用 xfers 的支付系統。",
+                    "details": [
+                        "使用 React 及 Redux，實作新功能並修正現有的程式碼。"
+                    ]
+                }
+            }
+        },
         "senao": {
             "projects": {
                 "enGeniusCloud": {

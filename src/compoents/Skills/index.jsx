@@ -11,12 +11,12 @@ const Skills = () => {
     {
       icon: ['fas', 'keyboard'],
       classification: 'Web Development',
-      skills: ['HTML5', 'CSS', 'Sass', 'CSS Modules', 'Emotion', 'JavaScript', 'webpack', 'GitLab CI/CD ', 'npm', 'Babel', 'ESLint', 'Grunt', 'Bower', 'RequireJS', 'Node.js', 'Git'],
+      skills: ['HTML5', 'CSS', 'Sass', 'CSS Modules', 'Emotion', 'JavaScript', 'TypeScript', 'Golang', 'webpack', 'GitLab CI/CD ', 'npm', 'Babel', 'ESLint', 'Grunt', 'Bower', 'RequireJS', 'Node.js', 'Git'],
     },
     {
       icon: ['fab', 'react'],
       classification: 'Frontend Framework',
-      skills: ['React', 'React Hook', 'React Router', 'react-i18next', 'Redux', 'Redux-Saga', 'Flux', 'jQuery', 'Bootstrap', 'Backbone.js'],
+      skills: ['React', 'React Hook', 'React Router', 'react-i18next', 'Redux', 'Reduck', 'Redux-Saga', 'MobX', 'Flux', 'jQuery', 'Bootstrap', 'Backbone.js'],
     },
     {
       icon: ['fas', 'globe'],

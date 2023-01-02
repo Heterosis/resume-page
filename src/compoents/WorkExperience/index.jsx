@@ -11,8 +11,65 @@ const WorkExperience = () => {
 
   const experienceArr = [
     {
+      startDate: 'Feb. 2022',
+      endDate: 'present.',
+      companyName: 'TikTok',
+      companyLocation: 'Singapore',
+      jobTitle: 'Frontend Engineer',
+      projects: [
+        {
+          projectName: t('workExperience.tiktok.projects.contentSafetyPlatform.name'),
+          projectTarget: t('workExperience.tiktok.projects.contentSafetyPlatform.target'),
+          projectValue: t('workExperience.tiktok.projects.contentSafetyPlatform.value'),
+          projectDetails: (
+            <ol>
+              <li>{t('workExperience.tiktok.projects.contentSafetyPlatform.details.0')}</li>
+              <li>{t('workExperience.tiktok.projects.contentSafetyPlatform.details.1')}</li>
+              <li>{t('workExperience.tiktok.projects.contentSafetyPlatform.details.2')}</li>
+              <li>{t('workExperience.tiktok.projects.contentSafetyPlatform.details.3')}</li>
+            </ol>
+          ),
+          skills: ['React', 'Golang', 'MobX', 'React Hook', 'React Router', 'react-i18next', 'Semi-UI', 'Scss', 'webpack'],
+        }, {
+          projectName: t('workExperience.tiktok.projects.searchFeature.name'),
+          projectTarget: t('workExperience.tiktok.projects.searchFeature.target'),
+          projectValue: t('workExperience.tiktok.projects.searchFeature.value'),
+          projectDetails: (
+            <ol>
+              <li>{t('workExperience.tiktok.projects.searchFeature.details.0')}</li>
+              <li>{t('workExperience.tiktok.projects.searchFeature.details.1')}</li>
+              <li>{t('workExperience.tiktok.projects.searchFeature.details.2')}</li>
+              <li>{t('workExperience.tiktok.projects.searchFeature.details.3')}</li>
+              <li>{t('workExperience.tiktok.projects.searchFeature.details.4')}</li>
+            </ol>
+          ),
+          skills: ['React', 'Express', 'Reduck', 'React Hook', 'React Router', 'react-i18next', 'Semi-UI', 'Scss', 'webpack'],
+        },
+      ],
+    },
+    {
+      startDate: 'Dec. 2021',
+      endDate: 'Jan. 2022',
+      companyName: 'Xfers',
+      companyLocation: 'Remote',
+      jobTitle: 'Frontend Engineer',
+      projects: [
+        {
+          projectName: t('workExperience.xfers.projects.indoPayment.name'),
+          projectTarget: t('workExperience.xfers.projects.indoPayment.target'),
+          projectValue: t('workExperience.xfers.projects.indoPayment.value'),
+          projectDetails: (
+            <ol>
+              <li>{t('workExperience.xfers.projects.indoPayment.details.0')}</li>
+            </ol>
+          ),
+          skills: ['React', 'React Hook', 'React Router', 'react-i18next', 'reactstrap', 'Bootstrap', 'Sass', 'webpack'],
+        },
+      ],
+    },
+    {
       startDate: 'Dec. 2020',
-      endDate: 'present',
+      endDate: 'Oct. 2021',
       companyName: 'Senao Networks',
       companyLocation: 'Taipei City, Taiwan',
       jobTitle: 'Frontend Engineer',
