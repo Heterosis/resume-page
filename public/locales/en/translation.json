@@ -1,9 +1,9 @@
 {
     "headerText": "Constantly catching up in Frontend engineering",
     "aboutMe": {
-        "introduce": "Hi! I am a self-taught frontend engineer. Due to the self-taught experience, I am confident with solving problems by myself and learning new skills quickly.",
-        "frontFrame": "Currently I develop products with tools from React + Flux/Redux ecosystem, including React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
-        "beExp": "I have experience of developing BFF with Node.js+Express.js and Golang+Gin.",
+        "introduce": "Hi! I am a self-taught frontend engineer. I am a fast learner and a team player. I am always willing to learn new skills and share my knowledge with others. I am currently working at TikTok as a front-end engineer.",
+        "frontFrame": "Currently I develop products with React + Flux/Redux ecosystem, including React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
+        "beExp": "I have experience of developing BFF with Node.js + Express.js and Golang + Gin.",
         "styleExp": "Experienced with Sass and CSS Modules, I am working on studying Emotion to improve my web styling skills.",
         "buildEnv": "Knowing the development process: I have the experience of setting up webpack, Grunt + RequireJS and GitLab CI/CD YAML files."
     },
