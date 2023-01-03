@@ -1,11 +1,11 @@
 {
     "headerText": "在前端工程師的路上不斷努力",
     "aboutMe": {
-        "introduce": "Hi! 我是一名自學轉職的前端工程師，由於有自學的經驗，我有自信在工作中遭遇到問題時，獨力搜尋並解決問題，並在學習新技術上更有心得。",
+        "introduce": "Hi! 我是一名自學轉職的前端工程師，目前在 TikTok 工作，主要負責內容安全平台的開發。我喜歡學習新的技術，並且喜歡將所學的技術應用在實際的專案上，我相信這樣才能更快的成長。我也喜歡分享自己的學習心得，並且希望能夠幫助到更多的人。",
         "frontFrame": "在前端框架上，目前主要使用 React + Flux/Redux + TypeScript 及其相關生態系的套件進行開發，以 React Hook 為主要的開發方式，在 Redux 的非同步處理 middleware 上則有 Redux-Saga 的使用經驗，亦使用過 Backbone.js + jQuery 進行開發。",
         "beExp": "在後端開發上，有使用過 Node.js + Express.js 進行開發，對 Golang 也有一些了解，並有使用過 Golang + Gin 進行開發 BFF 的經驗。",
         "styleExp": "樣式設計上有 Sass 與 CSS Modules 的使用經驗，目前也在研究 Emotion，期許自己能在開發能力上更精進。",
-        "buildEnv": "參與過 webpack 與 Grunt + RequireJS 的開發環境建置，以及 GitLab CI/CD YAML file 設定，作為一名前端工程師，不只是開發網頁，對於開發流程也有所理解。"
+        "buildEnv": "有使用 webpack 與 Grunt + RequireJS 進行開發環境建置的經驗，以及 GitLab CI/CD YAML file 設定，作為一名前端工程師，不只是開發網頁，對於開發流程也有所理解。"
     },
     "workExperience": {
         "tiktok": {
