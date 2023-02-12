@@ -95,7 +95,6 @@ const WorkExperience = () => {
             <ol>
               <li>{t('workExperience.senao.projects.selfHostedManagementTool.details.0')}</li>
               <li>{t('workExperience.senao.projects.selfHostedManagementTool.details.1')}</li>
-              <li>{t('workExperience.senao.projects.selfHostedManagementTool.details.2')}</li>
             </ol>
           ),
           skills: ['React', 'React Hook', 'React Router', 'Redux', 'Redux-Saga', 'reactstrap', 'Bootstrap', 'Sass', 'webpack'],

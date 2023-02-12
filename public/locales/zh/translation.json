@@ -65,8 +65,7 @@
                     "value": "開發中。",
                     "details": [
                         "將程式環境從 Flux 轉移至 Redux 並重寫相關函式，用 Redux-Saga 處理 async functions 及 side effects。",
-                        "導入 react-i18next 以創建多語言網站。",
-                        "與 UI/UX 及 PM 溝通，評估產品實做方式"
+                        "導入 react-i18next 以創建多語言網站。"
                     ]
                 }
             }
