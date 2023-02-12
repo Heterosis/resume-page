@@ -1,7 +1,7 @@
 {
     "headerText": "Constantly catching up in Frontend engineering",
     "aboutMe": {
-        "introduce": "Hi! I am a self-taught frontend engineer. I am a fast learner and a team player. I am always willing to learn new skills and share my knowledge with others. I am currently working at TikTok as a front-end engineer.",
+        "introduce": "As a self-taught frontend engineer, I possess the qualities of a quick learner and an effective team player. I have a strong desire to continuously expand my skill set and am always eager to share my knowledge with others. Currently, I am employed at TikTok as a frontend engineer, where I am committed to delivering exceptional results.",
         "frontFrame": "Currently I develop products with React + Flux/Redux ecosystem, including React Hook and Redux-Saga, and having experience of Backbone.js and jQuery.",
         "beExp": "I have experience of developing BFF with Node.js + Express.js and Golang + Gin.",
         "styleExp": "Experienced with Sass and CSS Modules, I am working on studying Emotion to improve my web styling skills.",
@@ -12,25 +12,25 @@
             "projects": {
                 "contentSafetyPlatform": {
                     "name": "Operating platform for TikTok content safety",
-                    "target": "Implement a web platform for content reviewers so they can target and eliminate unsafe contents on TikTok more efficiently.",
-                    "value": "Cut down 30% to 40% of the time for content reviewers to review contents averagely.",
+                    "target": "Develop a web-based platform to empower content reviewers to effectively identify and remove any unsafe content on TikTok with greater efficiency.",
+                    "value": "Reduce the average review time for content reviewers by 30% to 40%.",
                     "details": [
-                        "Implement new features and debug existing codes for front-end projects.",
-                        "Refactor the codebase to improve the performance of the platform.",
-                        "Increase unit test coverage to 70% of base components.",
+                        "Implement new features and resolve bugs in frontend projects by efficiently debugging existing code using React and MobX.",
+                        "Refactor the codebase to enhance the platform's efficiency and overall performance.",
+                        "Elevate unit test coverage from its current level of less than 10% to a target of 70% for all base components.",
                         "Implement BFF (Backend for Frontend) to reduce the number of requests to backend server."
                     ]
                 },
                 "searchFeature": {
                     "name": "New search platform",
-                    "target": "A faster search platform for content reviewers to locate unsafe contents on TikTok.",
-                    "value": "Provide multi-level search filters to content reviewers, so they can locate contents more efficiently.",
+                    "target": "A cutting-edge search platform designed to enhance the efficiency of content reviewers in identifying and locating potentially harmful content on TikTok.",
+                    "value": "Empower content reviewers with multi-level search filters, enabling them to swiftly and efficiently locate relevant content. Building a comprehensive search platform from the ground up, ensuring its seamless transition from development to production.",
                     "details": [
-                        "Construct the whole search platform from zero to production.",
-                        "Setup the development environment with webpack, Babel, ESLint, Prettier, lint-staged and Jest.",
-                        "Rapidly develop the whole project and deploy it to production in 2 weeks.",
-                        "Introduced permission control to both FE and BFF of the platform, so the content reviewers can only access the contents they are allowed to see and not able to send any unauthorized requests.",
-                        "Componentize the whole platform, so the platform can be easily extended to other projects."
+                        "Built a comprehensive search platform from the ground up, taking it from conception to full-scale production.",
+                        "Configured the development environment utilizing webpack, Babel, ESLint, Prettier, lint-staged, and Jest.",
+                        "Delivered the entire project within a tight timeline of two weeks, including rapid development and seamless deployment to production.",
+                        "Implemented a permission control system for both the frontend and BFF of the platform to ensure that content reviewers only have access to the approved content they are authorized to view, and they cannot make any unauthorized requests.",
+                        "Modularize the entire platform to facilitate its seamless integration and extension to other projects."
                     ]
                 }
             }
@@ -39,7 +39,7 @@
             "projects": {
                 "indoPayment": {
                     "name": "Payment system for indonesia area",
-                    "target": "Implement web GUI for store owners in indonesia, so they can easily manage whole xfers payment dashboard.",
+                    "target": "Implement web GUI for store owners in Indonesia, so they can easily manage the whole xfers payment dashboard.",
                     "value": "Provide an easy-to-use and intuitive user interface for users and reduce the learning curve.",
                     "details": [
                         "Implement new features and debug existing code with React and Redux."
@@ -51,22 +51,21 @@
             "projects": {
                 "enGeniusCloud": {
                     "name": "Web GUI of EnGenius Cloud",
-                    "target": "Implement web GUI to manage Enterprise-Level switch and access point devices produces by Senao Networks.",
-                    "value": "Save a lot of time on configuring devices to the whole enterprise network, so clients can focus on their business.",
+                    "target": "Develop a user-friendly web graphical user interface to efficiently manage Senao Networks' enterprise-level switch and access point devices.",
+                    "value": "By streamlining the process of configuring devices to the enterprise network, we save our clients a significant amount of time, allowing them to focus on the core aspects of their business operations.",
                     "details": [
-                        "Design the whole Backup and Switch Template page. The Backup page can backup the configuration of the network. The Switch Template page is used to construct Switch Templates, which can be applied to all switches in the network with certain models.",
-                        "Rewrite the Add Node modal with React Hooks, which is easier to maintain.",
-                        "Migrate existing code from classical components to React Hooks and write new features with React Hooks."
+                        "Design a comprehensive Backup and Switch Template page. The Backup page will allow for seamless backup of the network configuration, while the Switch Template page will serve as a platform for creating and customizing Switch Templates that can be uniformly applied to all switches within the network, regardless of their model",
+                        "Refactor the components using React Hooks for improved maintenance and ease of use.",
+                        "Migrate existing code from classical components to React Hooks and also in writing new features utilizing the latest React Hooks technology."
                     ]
                 },
                 "selfHostedManagementTool": {
-                    "name": "Web GUI of a self-hosted management tool for Enterprise-Level networks",
-                    "target": "Implement a self-hosted version of EnGenius Cloud, that clients can run on their own servers.",
-                    "value": "Under development.",
+                    "name": "Enterprise-Level Network Management Tool: A Self-Hosted Web GUI Solution",
+                    "target": "Design a user-friendly web graphical user interface that streamlines the management of Senao Networks' enterprise-level switch and access point devices. Of utmost importance is ensuring the privacy of our customers by allowing them to host the system on their own servers.",
+                    "value": "By streamlining the process of configuring devices to the enterprise network, we save our clients a significant amount of time, allowing them to focus on the core aspects of their business operations.",
                     "details": [
-                        "Migrate from Flux to Redux and rewrite related functions, handling async functions and side effects with Redux-Saga.",
-                        "Integrate react-i18next to construct a multi-language website.",
-                        "Communicate with UI/UX and Product Manager and evaluate product software implementation methods"
+                        "Migrate from Flux to Redux, and rewrite the related functions to ensure seamless integration. I effectively managed asynchronous functions and side effects using Redux-Saga, resulting in an optimized and efficient system.",
+                        "Implement react-i18next to create a multilingual website."
                     ]
                 }
             }
@@ -75,17 +74,17 @@
             "projects": {
                 "amber": {
                     "name": "Web GUI of AmberPRO and Amber X",
-                    "target": "Implement the embedded web GUI to manage AmberPRO and Amber X, a combined device of router and NAS.",
-                    "value": "Clients can easily manage their network and NAS devices with a intuitive web GUI.",
+                    "target": "Develop and integrate a web-based graphical user interface to efficiently manage AmberPRO and Amber X, a combined network-attached storage and router system.",
+                    "value": "Clients can effortlessly set up and configure their devices using the user-friendly web graphical interface.",
                     "details": [
-                        "Implement new features and debug existing code with Backbone.js and jQuery",
-                        "Communicate with UI/UX and Product Manager and evaluate product software implementation methods"
+                        "Implement new features and fix existing code issues using Backbone.js and jQuery.",
+                        "Collaborate with UI/UX designers and Product Managers to assess and implement effective software solutions for products."
                     ]
                 },
                 "migrateDevelopmentEnvironment": {
                     "name": "Migrate Development Environment",
-                    "target": "Support ES6+ features and give up the deprecated Bower.",
-                    "value": "Save a lot of time on finding packages and product development.",
+                    "target": "Support the latest ES6+ features and migrate deprecated Bower dependencies to npm to ensure a modern and maintainable codebase.",
+                    "value": "Efficiently reduce the time spent on installing packages and accelerate the development process for creating high-quality products.",
                     "details": [
                         "Migrate package manager from Bower to npm",
                         "Migrate module bundler from Grunt+RequireJS to webpack",
