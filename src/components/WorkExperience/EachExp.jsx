@@ -21,12 +21,12 @@ const WorkExperience = (props) => {
         <span className={`${styles.ExperienceDate}`}>{`${startDate} - ${endDate}`}</span>
       </div>
       <div className={`${styles.ExperienceContent}`}>
+        <div className={`${styles.Title}`}>
+          {jobTitle}
+        </div>
         <div className={`${styles.CompanyRow}`}>
           <span className={`${styles.Company}`}>{companyName}</span>
           <span className={`${styles.Location}`}>{companyLocation}</span>
-        </div>
-        <div className={`${styles.Title}`}>
-          {jobTitle}
         </div>
         {projects.map((project, index) => (
           <Project

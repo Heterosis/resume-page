@@ -51,25 +51,22 @@
 .CompanyRow {
   margin: 10px 0;
   font-size: 20px;
-  font-weight: 600;
 }
 
 .Company {
   margin-right: 1em;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .Location {
-  margin-right: 2em;
   font-size: 18px;
-  font-weight: 500;
 }
 
 .Title {
-  margin: 10px 0 20px;
-  font-size: 18px;
-  font-weight: 500;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .ProjectName::before {
