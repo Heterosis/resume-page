@@ -15,7 +15,7 @@ const Contact = (props) => {
       icon: ['fas', 'envelope'], title: 'Email', info: ' ', link: 'mailto:a3817001@gmail.com',
     },
     {
-      icon: ['fab', 'linkedin'], title: 'LinkedIn', info: 'You-ting Jhang', link: 'https://www.linkedin.com/in/you-ting-jhang-835a611a5/',
+      icon: ['fab', 'linkedin'], title: 'LinkedIn', info: 'You-ting Jhang', link: 'https://www.linkedin.com/in/you-ting-jhang/',
     },
   ];
 
